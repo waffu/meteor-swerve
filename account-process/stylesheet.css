@@ -1,0 +1,55 @@
+body{
+    background-color:black;
+}
+#forms{
+    position: relative;
+    width: 300px;
+    border-radius: 1px;
+    background-color: #333437;
+    padding: 15px;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    top: 150px;
+}
+    
+input {
+    width: 100%;
+}
+#registerform{
+    display:none;
+}
+#logintext{
+    font-family: Verdana;
+    color: white;
+}
+#registertext{
+    font-family: Verdana;
+    color: white;
+}
+#errortext{
+    color:red;
+}
+#registerbutton{
+    background-color: white;
+}
+#loginbutton{
+    background-color: white;
+}
+#showregister {
+     font-size: 12px;
+     background:none;
+     color:#4D74FF;
+     border:none; 
+     padding:0;
+     border-bottom:1px solid #444; 
+     cursor: pointer;
+     
+}
+#showregister:hover{
+    color:#6C8BFC;
+}
+#completetext{
+    color:green;
+}
+
