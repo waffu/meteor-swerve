@@ -12,7 +12,7 @@ function startGame() {
 	
 function canvasPreGame() {
 	ctx.font = "40px Arial";
-	ctx.fillText("Click here to start!",330,360);
+	ctx.fillText("Click here to start!",canvas.width / 3,canvas.height / 2);
 }
 
 // main loop (100 tick rate)

@@ -63,4 +63,4 @@ class Ship {
 	}
 }
 
-player = new Ship(450,750);
+player = new Ship((canvas.width / 2) - 25,canvas.height - 50);
