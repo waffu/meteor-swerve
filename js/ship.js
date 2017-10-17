@@ -24,19 +24,16 @@ class Ship {
 		if(this.moveright==1) {
 			// collision detect
 			if(this.x+50<canvas.width) {
-				this.x += 3;
-				player.drawShip();
+				this.x += 4;
 			}
 		}
 		// left
 		if(this.moveleft==1) {
 			// collision detect
 			if(this.x>0) {
-				this.x -= 3;
-				player.drawShip();
+				this.x -= 4;
 			}
 		}
-		player.drawShip();
 	}
 
 	// changes vars that are checked to make movement
@@ -54,13 +51,16 @@ class Ship {
 
 	// clears screen and draws ship
 	drawShip() {
-		ctx.clearRect(0, 0, canvas.width, canvas.height);
 		ctx.beginPath();
 		ctx.rect(this.x,this.y,50,50);
 		ctx.fillStyle = "#FF0000";
 		ctx.fill();
 		ctx.closePath();
 	}
+	clearShip() {
+		ctx.clearRect(this.x, this.y, 50, 50);
+	}
 }
 
+// sums in object parameters scale ship to canvas on start
 player = new Ship((canvas.width / 2) - 25,canvas.height - 50);

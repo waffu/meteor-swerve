@@ -3,14 +3,14 @@ session_start();
 
 // fix this so that it needs database validation
 if(isset($_SESSION['username'])){
-    header('Location: https://flisk.site/landing');
+    header('Location: https://flisk.site/meteorswerve');
 }?>
 <!DOCTYPE html>
 <html>
     
     <head>
         <title>flisk</title>
-        <link rel='stylesheet' type='text/css' href='stylesheet.css'>
+        <link rel='stylesheet' type='text/css' href='auth\stylesheet.css'>
         <script src='https://www.google.com/recaptcha/api.js'></script>
     </head>
     
@@ -19,7 +19,7 @@ if(isset($_SESSION['username'])){
 	    <div id = 'forms'>
 	    <!-- login -->
 	    <p id='logintext'>Login <button id='showregister' onclick='showRegister()'> not got an account?</button></p>
-		<form action='login.php' method='POST' id='loginform'>
+		<form action='auth\login.php' method='POST' id='loginform'>
 		<div id = 'logininputboxes'>
 		<input id = 'loginusername' type='text' name='un' placeholder='username' maxlength='10'><br>
 		<input id = 'loginpassword' type='password' name='pw' placeholder='password' maxlength='15'><br><br>
@@ -41,14 +41,14 @@ if(isset($_SESSION['username'])){
 		?>
 		</form>
 		<!-- register -->
-		<form action='register.php' method='POST' id='registerform'>
+		<form action='auth\register.php' method='POST' id='registerform'>
 		<p id='registertext'>Register</p>
 		<div id = 'logininputboxes'>
 		<input type='text' name='unreg' placeholder='username' maxlength='10'><br>
 		<input type='password' name='pwreg' placeholder='password' maxlength='15'><br>
 		<input type='password' name='pwregcheck' placeholder='password' maxlength='15' width="100px"><br>
 		</div>
-		<div class="g-recaptcha" data-sitekey="" data-theme='dark'></div><br>
+		<div class="g-recaptcha" data-sitekey="6LdkUigUAAAAALXRiLo4ukkHyfH-dPwwuRLN4v3H" data-theme='dark'></div><br>
 		<button id='registerbutton' type="submit">Register</button><br><br>
 		
 		<script>

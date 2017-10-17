@@ -1,11 +1,11 @@
 body{
-    background-color:black;
+    background-color:#907f7f;
 }
 #forms{
     position: relative;
     width: 300px;
     border-radius: 1px;
-    background-color: #333437;
+    background-color: #373535;
     padding: 15px;
     margin: 0 auto;
     padding-bottom: 5px;
