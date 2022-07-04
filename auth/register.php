@@ -13,7 +13,7 @@ if ($_SESSION['reset_register_status']=='1'){
 
 if (isset($_POST['g-recaptcha-response'])) {
     $captcha = $_POST['g-recaptcha-response'];
-    $privatekey = "***REMOVED***";
+    $privatekey = "";
     $url = 'https://www.google.com/recaptcha/api/siteverify';
     $data = array(
         'secret' => $privatekey,
