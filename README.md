@@ -2,7 +2,7 @@
 
 it involves a web based game called meteor swerve, you are a spaceship and must dodge incoming meteors
 
-this was made for a high school course and uses:
+this was made for a high school course (no prompt, we had to decide on a project ourselves including the scope. the main marking criteria was the standard of documentation produced) and uses:
 * javascript canvas for the game screen
 * custom php backend
 * captcha
